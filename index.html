@@ -3,57 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>&#8203;</title>
-  <link rel="stylesheet" href="/assets/css/index.css">
-  <link rel="icon" type="image/png" href="/favicon.ico">
-  <meta property="og:title" content="Very cool bio"/>
-  <meta name="theme-color" content="#b6b6b6"/>
-  <meta name="msapplication-TileColor" content="#b6b6b6"/>
-  <meta property="og:image" content="/assets/gifs/cat.gif"/>
-  <meta property="og:description" content="🤞❤️‍🩹" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title></title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jersey+10&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="enter-screen" class="enter-screen">
-    <button id="enter-text">Click anywhere to enter...</button>
+    <button id="enter-text">Click anywhere to enter</button>
   </div>
-  <audio id="bg-music" src="/assets/sounds/molly.mp3" loop></audio>
-  <div class="background"></div>
-  <div class="bio-container" style="display: none; opacity: 0;">
-    <div class="profile-card">
-      <div class="banner"></div>
-      <img src="https://avatars.githubusercontent.com/u/143974574?s=400&u=c62e5b7b16006c5f845d5ebb8f2aa92fce7ad025&v=4" alt="Profile Picture" class="profile-img">
-      <h1 class="name">sent</h1>
-      <div class="project-link">
-        <h2>My Latest Project</h2>
-        <a href="https://github.com/xojw/waves" target="_blank" class="project-link-btn">
-          Waves
-          <span class="tooltip">View Project</span>
-        </a>
-      </div>  
-      <p class="quote">"In three words I can sum up everything I've learned about life: it goes on."</p>
-      <p class="author">- Robert Frost</p>
-      <div class="social-icons-container">
-        <div class="social-icons">
-          <a href="http://discord.com/users/1111107934919852063/" target="_blank" class="social-icon" data-tooltip="Discord">
-            <i class="fab fa-discord"></i>
-            <span class="tooltip">Discord</span>
-          </a>
-          <a href="https://github.com/xojw/" target="_blank" class="social-icon" data-tooltip="GitHub">
-            <i class="fab fa-github"></i>
-            <span class="tooltip">GitHub</span>
-          </a>
-          <a href="https://waves.lat/" target="_blank" class="social-icon" data-tooltip="Website">
-            <i class="fa solid fa-globe"></i>
-            <span class="tooltip">Website</span>
-          </a>
-        </div>
+  <audio id="music" src="sedated.mp3" loop></audio>
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <img src="https://avatars.githubusercontent.com/u/143974574?s=400&u=8c987f4e59b7b402f1ae4bea82fb1aefa984d829&v=4" class="pfp">
+      <div class="name">
+        <p>hihi, im <span style="color: #9ab1db;">luy</span> <span style="color: #ffffff80; font-size: 12px;">he/him</span></p>
+        <div id="oneko"></div>
+        <p style="font-size: 12px; margin-top: -17px;">i love to make random things and messing with stuff</p>
+        <p style="font-size: 12px; margin-top: 5px;">owner & maintainer for waves.lat</p>
       </div>
-    </div>
-  </div>
-  <script src="/assets/js/oneko.js" defer></script>
-  <script src="/assets/js/index.js" defer></script>
-  <script src="/assets/js/type.js" defer></script>
-  <script src="/assets/js/card.js" defer></script>
+      <div class="socials">
+        <p>socials</p>
+          <a href="mailto:me@luy.lat" target="_blank" style="color: transparent;">
+            <button id="yay">email</button>
+          </a>
+          <a href="http://discord.com/users/1111107934919852063/" target="_blank" style="color: transparent;">
+            <button id="yay">discord</button>
+          </a>
+          <a href="https://steamcommunity.com/id/l4uy/" target="_blank" style="color: transparent;">
+            <button id="yay">steam</button>
+          </a>
+          <a href="http://instagram.com/luy.lat/" target="_blank" style="color: transparent;">
+            <button id="yay">insta</button>
+          </a>
+          <a href="http://tiktok.com/@luy.lat" target="_blank" style="color: transparent;">
+            <button id="yay">tiktok</button>
+          </a>
+      </div>
+      <div class="projects">
+        <p>projects</p>
+          <a href="https://github.com/l4uy/waves/" target="_blank" style="color: transparent;">
+            <button id="yay">waves!!</button>
+          </a>
+          <a href="https://github.com/l4uy/bio/" target="_blank" style="color: transparent;">
+            <button id="yay" style="width: 80px;">bio (this site)</button>
+          </a>
+      </div>
+      <div class="badges">
+        <img src="https://anlucas.neocities.org/made_with_windows.gif" width="88" height="31">
+        <a href="https://github.com/l4uy/" target="_blank" style="color: transparent;">
+          <img src="https://88x31.kate.pet/github.png" width="88" height="31">
+        </a>
+        <a href="https://lucida.to/" target="_blank" style="color: transparent;">
+          <img src="https://lucida.to/buttons/88x31.gif" width="88" height="31">
+        </a>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfBAMAAACR5hfTAAAAJ1BMVEU5VpKetOD////W2uVvhreElLnz9Pmsts2RpM1cdarh5e7Byt9GYZqEv+0pAAABiklEQVQ4y93RsUvDQBQG8FAbpdrBJ63oFr+rF2kdSqrOVXCpSypWnQMF0SUUFMHFiKLoUqWCowa6lwg6uHQQxf/KV0Np02Kqm3hwxz34cXzvnaL8nRV1qNpVrp6G4WUKYEqEYec3mJLBMhwnfo45BdVonKMrsSKdNRnfbVe/wUXGUR9zq1SlRJymwl72cZx8rNJ0WGYfx/j2wTGuyRyMW2erdKg5CBeslI8pJEUbewjgx2xHjOV6sZvZ8HHSmeIY6MIREcTJmjvTaTAfhmNEE8D8JHbp1pKHT6grqO9XVU/ayiXqjEtm53+dFs6uAA8nwCIAk3d5HdBH+LIiVNgd/Hqx7ep59cjacfeez/GCBoSbqeibclRuwRNv6eBQDO3r4KxD4MTIRoShDYEjwBBeqg+/5ywfowfLdooubAA+zuXsILbu+zCyhuaWS1colUzUKxlP30wPc+aKqOj9L6eh8TQWOIbNe5anM9eaxo0Ylc1eXJCeprrSXoM8XoIwVTdtKwdYjIgoGsq/X58HMWJEZ3g58AAAAABJRU5ErkJggg==" width="88" height="31">
+        <a href="https://www.debian.org/" target="_blank" style="color: transparent;">
+          <img src="https://88x31.kate.pet/powered-by-debian.gif" width="88" height="31">
+        </a>
+        <a href="https://caddyserver.com/" target="_blank" style="color: transparent;">
+          <img src="https://caddyserver.com/resources/images/nostalgia/caddy.png" width="88" height="31">
+        </a>
+        <a href="https://anybrowser.org/campaign/index.html/" target="_blank" style="color: transparent;">
+          <img src="https://foxmoss.com/any-browser.png" width="88" height="31">
+        </a>
+        <img src="https://kuting.neocities.org/images/devils_button.gif" width="88" height="31">
+        <a href="https://www.eff.org/pages/blue-ribbon-campaign/" target="_blank" style="color: transparent;">
+          <img src="https://anlucas.neocities.org/freespeechforever.gif" width="88" height="31">
+        </a>
+        <a href="https://ublockorigin.com/" target="_blank" style="color: transparent;">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAbFBMVEXN0MwYGRePkY71DBx2AQDCvrvRpqgAAQD9//yAAAFxc3DpRFJJS0iwoqHtKTS3tbOYPT26lZUjJCKPLi2vcXKJHB4xMzHyIC/05+enXVzUycasqqh8fnuBDg1kZmTYdn2eUFCygYHhd4Hctrgqg8b9AAACwklEQVRIx7WWh5KrIBiFlZYIKAq22KLm/d/xHkxZY8rOnVmZXYrA5+EAvwmOO6VgJ+4B4GCHdNiATZ7Hu4DjMc3434PjbOyjdIo36JaQOGjl6sGjTsi1lOa6YLkFtxnSNBaRT2k+oRWb+yAZ6nAg4Q/4Xo9tGJaLdTa+PdiCc+dcHz1S71wxtp7ZQp0MudYe1kkIJFKiTrxGq01batIRIlsbZUcwuEP/CnxaUW/JeREhAQSKbYtSlwPadoD62HZeOPHLkbbsQuI7/Ru1lWH3DGYs8hlbShiyAmMaypBwLfXAOQlLHdzAg5WlH4e6XsDS//1YAXABh/uiL1zPVuAuXKywmFNKU3ZaG0Og0veWJensILUfZ9H5HszyrGCpyC6NSNkdPGDfAA5thzldGerA6NAutsDjGPXBXMGdLd+BR5hwqR071cdG1IEnp/93U2LTWvJ6jk8Ai6YAGLLHWhTsBSyuBf9wfyTEv7kg3oorOMXmCS95A+Z0IXKl3lCV+HTzpgc4Z8w1F8ei5Ryv5l7Bgp5fJYvP4Azgqc5T+HtCluNgnMzTyIQuk5NK8LMXLXwT7/DvUcnHWBEXEStEXdfZpT4u3D7fgj2OJ4JTmpzRVr7FRaI4T9RHsHHYveKUw1ufsYi57NnihCbQeK6amSoKID0HvKKNoGhS/hk89ddbF91uHhufBSsl/IIT1dBKzFRUlZcuAMYT9SVsmpStAwUrnsMyFo19E3BCwWv8I68oDfhMeZOIb/E4dmtuPz2v7pz4k0arilcqEJWCYDiAKp0bIb4H+sytuJudgwXcHzU6zzfBSlXI8IoPV2b9BYnTRnSeNlzuz4HfLIDnOeGwtxINxfkAdOn7+mky+SK6OL1ECZHwG98jOSpqOb7LxfgdDNGIy2+/pj828vvNeMQNwX8H83h0e3yld/zB8rfgwy4p2Il7+AekKDozf/zkfQAAAABJRU5ErkJggg==" width="88" height="31">
+        </a>
+        <img src="data:image/gif;base64,R0lGODlhWAAfAPMPAMrKygAAALW1tf8AQP8AAP9VVf9/n/9/f6qqqgAA0gDMAAAAuwCtAACFAAAAh////yH5BAAAAAAALAAAAABYAB8AAAT/8MlJq704681z6GAojlvwPUCqrmzrsmYMmGkwxzZ+03e95zrYaeUoGhvHhnKJdLxUtlo0OoOuqEAf1eoySVRGB5NBdpAZTOOzqmW7ddhq7sdteVGAsNJ87veXRU9xcz6FUjxzhFcvd3lFS34MCgqSZwtoe05dXDxvi209W4ZCX2KQZ5Opqn9NdnBSda+gNEFupChiRaiqvKlnSEhrwsPEa42AZAsLvcy/gcXQ0cZDe8rM15NlakKIMj+KcVCIdbcASsnW2L3amp9ysfDvnvJd1A1k6tdn2+7g8WyERI1y9eUePlUJ8mVbEIbbFG+jAsqCMa3groSTEmDEpowBv4Hh/2x5G/SvnkVJGXlpVJlKWUN3hoBADPlwi8Ar1C4i1LiRZ8uXawS0EIBAWgqhw44dTMWzacKmylx+dCGAgAEWAwYYBTCgQNKcSzM6fcoz6iVTwgYQYFGAgFdpB9x+PYmS6Vioky55bPeEAIEDK7ICEFBAawoDbwEUBVBgsVpixwzuvFt2mVS+L/waHkxAqFq5VQ0bsBp3gFACmyviMohyAeXKUdE8ezLaL2DGWuO27ax7sGAAqAtbhTxEDKqorxOYZShmWFYDv+UKHg1dqwC1V4F7RV2skSlLZp0uv9xAWFWhow9UZdyZ/WjPflPE9Xx77upz6MbrZ15eWGEVWQnWVX0KXQm2m1dV3VaffY7g19F+ZiXhXGK1HTBaUW1VVcB/Aw44WDSNNFgNAxCSh5kLCMgF4F9xHRDXVZoRGOBRKhL3RQqPhAFhGLOtMZ8KnnmllmkyDnadW9lpB02IWxm14AroJUnVClLOhcOVWGap5ZZcdunll2CGKeaYZHIZAQA7" width="88" height="31">
+        <img src="https://anlucas.neocities.org/got_html.gif" width="88" height="31">
+      </div>
 </body>
 </html>
